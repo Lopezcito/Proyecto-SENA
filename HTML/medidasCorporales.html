@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidas Corporales</title>
+    <!-- Conexión con CSS -->
+    <link rel="stylesheet" href="/CSS/medidasCorporales.css">
+</head>
+<body>
+    <h1>Formulario de Medidas Corporales</h1>
+    <!-- Pantalla principal -->
+    <div id="principal"> 
+        <form id="medidas-form">
+            <fieldset id="antropometricos">
+                <legend>Datos antropométricos</legend>
+                
+                <!-- Campo para la edad -->
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" placeholder="Ingresa tu edad" required>
+                <br>
+    
+                <!-- Campo para la estatura -->
+                <label for="estatura">Estatura (en cm):</label>
+                <input type="number" id="estatura" name="estatura" placeholder="Ingresa tu estatura" required>
+                <br>
+    
+                <!-- Campo para el peso -->
+                <label for="peso">Peso (en kg):</label>
+                <input type="number" id="peso" name="peso" placeholder="Ingresa tu peso" required>
+                <br>
+            </fieldset>
+            
+            <fieldset id="perimetros">
+                <legend>Medidas de Perímetros (en cm)</legend>
+                
+                <!-- Campo para el perímetro de hombros -->
+                <label for="hombros">Hombros:</label>
+                <input type="number" id="hombros" name="hombros" placeholder="Medida de hombros" required>
+                <br>
+    
+                <!-- Campo para el perímetro de tórax -->
+                <label for="torax">Tórax:</label>
+                <input type="number" id="torax" name="torax" placeholder="Medida de tórax" required>
+                <br>
+    
+                <!-- Campo para el perímetro de bíceps relajado -->
+                <label for="biceps-relajado">Bíceps Relajado:</label>
+                <input type="number" id="biceps-relajado" name="biceps-relajado" placeholder="Medida de bíceps relajado" required>
+                <br>
+    
+                <!-- Campo para el perímetro de bíceps contraído -->
+                <label for="biceps-contraido">Bíceps Contraído:</label>
+                <input type="number" id="biceps-contraido" name="biceps-contraido" placeholder="Medida de bíceps contraído" required>
+                <br>
+    
+                <!-- Campo para el perímetro de antebrazo -->
+                <label for="antebrazo">Antebrazo:</label>
+                <input type="number" id="antebrazo" name="antebrazo" placeholder="Medida de antebrazo" required>
+                <br>
+    
+                <!-- Campo para el perímetro de cintura -->
+                <label for="cintura">Cintura:</label>
+                <input type="number" id="cintura" name="cintura" placeholder="Medida de cintura" required>
+                <br>
+    
+                <!-- Campo para el perímetro de cadera -->
+                <label for="cadera">Cadera:</label>
+                <input type="number" id="cadera" name="cadera" placeholder="Medida de cadera" required>
+                <br>
+    
+                <!-- Campo para el perímetro de muslo superior -->
+                <label for="muslo-superior">Muslo Superior:</label>
+                <input type="number" id="muslo-superior" name="muslo-superior" placeholder="Medida de muslo superior" required>
+                <br>
+    
+                <!-- Campo para el perímetro de muslo medio -->
+                <label for="muslo-medio">Muslo Medio:</label>
+                <input type="number" id="muslo-medio" name="muslo-medio" placeholder="Medida de muslo medio" required>
+                <br>
+    
+                <!-- Campo para el perímetro de pantorrilla -->
+                <label for="pantorrilla">Pantorrilla:</label>
+                <input type="number" id="pantorrilla" name="pantorrilla" placeholder="Medida de pantorrilla" required>
+                <br>
+            </fieldset>
+            
+            <!-- Botón para enviar el formulario -->
+            <button type="submit" id="btn-guardar">Guardar</button>
+    
+            <!-- Botón para ver registros del formulario -->
+            <button type="button" id="btn-emergente" formnovalidate>Ver Registros</button>
+    
+        </form>
+    </div>
+
+    <!-- Pantalla emergente -->
+    <div id="emergente">
+        <h1>Bienvenido a la ventana emergente</h1>
+        <!-- Botón para cerrar la ventana emergente -->
+        <button type="button" id="btn-cerrar">Cerrar</button>      
+    </div>
+
+    <!-- Conexión con el JS -->
+    <script src="/JS/medidasCorporales.js"></script>
+</body>
+</html>

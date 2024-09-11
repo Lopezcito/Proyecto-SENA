@@ -1,0 +1,22 @@
+/* Estilo de la ventana emergente */
+#emergente {
+    display: none; /* Oculta la ventana emergente por defecto */
+    position: fixed; /* Fija la ventana en la pantalla */
+    z-index: 1; /* Asegura que la ventana esté sobre el contenido */
+    left: 25%;
+    top: 20%;
+    width: 60%;
+    height: 20%;
+    background-color: white; /* Fondo semitransparente para el overlay */
+    overflow: auto; /* Permite el desplazamiento si el contenido es grande */
+}
+
+/* Estilo del contenido de la ventana emergente */
+#emergente-content {
+    background-color: #ffffff; /* Fondo blanco para el contenido */
+    margin: 10% auto; /* Centra el contenido vertical y horizontalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ancho del contenido de la ventana emergente */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Añade una sombra para mejor visibilidad */
+}

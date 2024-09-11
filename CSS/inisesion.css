@@ -1,0 +1,187 @@
+
+/* Con Esto Hago Reset de los margenes por defecto del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+body { 
+    text-align: center; /* Alinea todo el formulario al centro */
+     display: flex; /*Activa el diseño flex box */
+    flex-direction: column; /*Organiza los elementos hijos en una columna, apilandolos verticalmente*/
+    align-items: center;/*centrar horizontalmente los elementos*/
+    justify-content: center; /*Alinear elementos */
+    height: 100vh; /*Altura completa de la ventana del navegador*/
+     background-image:url(/img/FondoIronGym.jpg); /*Imagen de fondo */
+    /* backdrop-filter: blur(3px) ; */
+    background-size: cover; /* Ajusta el tamaño del fondo para que cubra completamente el area*/
+    backdrop-filter: blur(3px);
+}
+
+
+h1{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+    margin-top: -10px;
+    font-size: 24px;
+    
+}
+.form-group{
+    position: relative; /*Necesario para el posicionamiento absoluto de los elementos hijos*/
+    margin-bottom: 20px; /*Espacio entre los grupos del form*/
+    /* display: flex; */
+    align-items: center;
+}
+
+.titulo-label{
+    position: absolute;
+    top: -20px; /* Ajusta esta propiedad para mover el span hacia arriba o abajo */
+    left:0 ;
+    text-align: center;     /*Opcional: centra el texto del span */
+    font-size: 12px; /* Tamaño del texto del span */
+    color: #ffffff;/* Color del texto del span */
+    /*background-color: #f0f0f0;  Color de fondo opcional */
+    /*padding: 2px;  Espacio interno opcional */
+    /*border-radius: 4px;  Bordes redondeados opcionales */
+
+}
+.container-info{
+    display: inline-block; /*Ajusta el tamaño del form automaticamente al contenido*/
+    padding: 20px; /*Espaciado Interno*/
+    height: 400px; /* Alto del Form*/
+    width: 300px; /*Ancho del form*/
+    max-width: 900px; /* Para que no crezca mas de el valor dado*/
+    /*border: solid thin blue; /* Borde del formulario*/
+    border-radius: 20px; /*Esquinas Redondeadas*/
+    border: 1px solid rgba(255, 255, 255, 0.2);/*Borde Sutil*/
+    box-shadow: 0 0 15px rgb(105, 28, 247); /*Sombra Del Form*/
+    transition: all 1s ease; /*Para que haya una transicion al aparecer el formulario*/
+    background-color: rgba(0, 0, 0, 0); /*Color de el fondo de el Form*/
+    /*backdrop-filter: blur(5px); /* Desenfoque del fomulario */
+    background-image: url(/img/FondoIronGym.jpg);
+    background-size: cover;
+}
+
+.info-hijos button {
+    /* border: solid 2px rgb(57, 65, 179); Borde de el boton */
+    outline: none; /*Define el borde alrededor del boton*/
+    padding: 10px 15px; /*Espacios al rededor del boton*/
+    margin: 30px 0px;
+    background-color: #3820af; /*Fondo del boton*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1); /*Sombra de el botón */
+    color: #fff; 
+    width: 100%;
+    border-radius: 20px; /*Redpndes de las esquinas del boton*/
+    cursor: pointer; /*Cambio de cursos cuando está encima del boton*/
+    transition: background-color .3s ease;  /* Transicion al hacer el efecto hover, al pasar el cursor por el botón*/
+    border: none;
+    
+}
+
+/* Respuesta visual cuando el cursor pase por el boton, hover es una pseudo clase. */
+.info-hijos button:hover { 
+    background-color: #7a7a9a; /*Fondo del botón cuando se pone el cursor sobre el*/
+    border: none; /*Quita los bordes del boton*/
+    color: #fff; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1); /*sombra del boton*/
+
+}
+.info-hijos .olvido:hover {
+    color: rgba(223, 73, 73, 0.991);
+
+}
+
+.bx {
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+}
+
+.form {
+    margin: 30px 0 0 0; 
+}
+
+.form label {
+    border-radius: 30px; /*Redondea las esquinas de los labels */
+    margin-bottom: 25px; /*Para que se separen los labels */
+    align-items: center; /*Alinea los iconos con los imputs */
+    display: flex ; /*Activa el modo flex */
+    padding: 0 5px; /*Crea espacios dentro de el borde de el elemento, utilicé con el fin de que se vea mas "Voluptuoso" el label */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1); /*Sombra de los labels */
+    color: #ccc;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, .3);
+    
+    
+}
+
+
+.form label input{
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 20px ;
+    color: #ffffff;
+    background-color: transparent; 
+    font-size: 18px;
+} 
+.form-group label input:focus {
+    border: 1px solid rgb(105, 28, 247);
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+
+
+}
+
+.check input[type="checkbox"] {
+align-items: 5px;
+}
+
+
+
+.check span {
+    color:#fff;
+    font-size: 14px;
+    margin-left: 10px;
+    
+
+}
+
+.olvido {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: #ccc;
+}
+
+/*RESPONSIVE FORM*/
+/* cuando el tamaño de fuente sea menor que 750 se cambia a 12px*/
+@media screen and (max-width:750px) { 
+    html {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

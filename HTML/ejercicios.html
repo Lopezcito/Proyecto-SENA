@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Ejercicios</title>
+    <link rel="stylesheet" href="/CSS/ejercicios.css">
+</head>
+<body>
+    <h1>Rutina</h1>
+    <ul class="diaSemana">
+        <li id="lunes">
+            <span>Lunes</span>
+            <button type="button">Agregar</button>
+        </li>
+        <li id="martes">
+            <span>Martes</span>
+            <button type="button">Agregar</button>
+        </li>
+        <li id="miercoles">
+            <span>Miércoles</span>
+            <button type="button">Agregar</button>
+        </li>
+        <li id="jueves">
+            <span>Jueves</span>
+            <button type="button">Agregar</button>
+        </li>
+        <li id="viernes">
+            <span>Viernes</span>
+            <button type="button">Agregar</button>
+        </li>
+        <li id="sabado">
+            <span>Sábado</span>
+            <button type="button">Agregar</button>
+        </li> 
+    </ul>
+
+    
+
+
+    <!-- Pantalla emergente -->
+    <div id="emergente">
+    <h1>Lista de ejercicios dividido por grupos musculares</h1>
+    <!-- Grupo: Core -->
+    <div class="grupo-ejercicios" id="core">
+        <h2>Core</h2>
+        <ol class="lista-ejercicios">
+            <li>
+                <span>Encogimientos de tronco</span>
+                <button type="button">Agregar</button>
+            </li>
+            <li>
+                <span>Crunch</span>
+                <button type="button">Agregar</button>
+            </li>
+            <li>
+                <span>Crunch con pies apoyados en banco</span>
+                <button type="button">Agregar</button>
+            </li>
+            <li>
+                <span>Elevación del tronco completo</span>
+                <button type="button">Agregar</button>
+            </li>
+            <li>
+                <span>Elevación del tronco en banco inclinado</span>
+                <button type="button">Agregar</button>
+            </li>
+            <li>
+                <span>Crunch con polea alta</span>
+                <button type="button">Agregar</button>
+            </li>
+            <li>
+                <span>Plancha</span>
+                <button type="button">Agregar</button>
+            </li>
+            <li>
+                <span>Plancha lateral</span>
+                <button type="button">Agregar</button>
+            </li>
+            <li>
+                <span>Plancha inversa</span>
+                <button type="button">Agregar</button>
+            </li>
+            <li>
+                <span>Twist</span>
+                <button type="button">Agregar</button>
+            </li>
+            <li>
+                <span>Lateral tronco bastón</span>
+                <button type="button">Agregar</button>
+            </li>
+            <li>
+                <span>Flexión tronco con polea baja</span>
+                <button type="button">Agregar</button>
+            </li>
+            <li>
+                <span>Flexión tronco con mancuerna</span>
+                <button type="button">Agregar</button>
+            </li>
+            <li>
+                <span>Roll out</span>
+                <button type="button">Agregar</button>
+            </li>
+            <li>
+                <span>Flexión lateral en banco</span>
+                <button type="button">Agregar</button>
+            </li>
+            <li>
+                <span>Encogimientos unilaterales de tronco</span>
+                <button type="button">Agregar</button>
+            </li>
+            <li>
+                <span>Encogimientos unilaterales de tronco con balón</span>
+                <button type="button">Agregar</button>
+            </li>
+            <li>
+                <span>Rotación tronco en banco inclinado</span>
+                <button type="button">Agregar</button>
+            </li>
+            <li>
+                <span>Elevación de piernas extendidas</span>
+                <button type="button">Agregar</button>
+            </li>
+            <li>
+                <span>Elevación de piernas en banco inclinado</span>
+                <button type="button">Agregar</button>
+            </li>
+            <li>
+                <span>Elevación de piernas en paralelas</span>
+                <button type="button">Agregar</button>
+            </li>
+            <li>
+                <span>Elevación de piernas en barra fija</span>
+                <button type="button">Agregar</button>
+            </li>
+            <li>
+                <span>Elevación de piernas sobre balón</span>
+                <button type="button">Agregar</button>
+            </li>
+            <li>
+                <span>Tensión isométrica sobre balón con piernas estiradas</span>
+                <button type="button">Agregar</button>
+            </li>
+            <li>
+                <span>Encogimientos dobles</span>
+                <button type="button">Agregar</button>
+            </li>
+            <li>
+                <span>Extensión lumbar sobre balón</span>
+                <button type="button">Agregar</button>
+            </li>
+            <li>
+                <span>Extensión lumbar sobre banco</span>
+                <button type="button">Agregar</button>
+            </li>
+            <li>
+                <span>Superman con o sin balón</span>
+                <button type="button">Agregar</button>
+            </li>
+        </ol>
+    </div>
+
+
+
+    <!-- Grupo: Bíceps -->
+    <div class="grupo-ejercicios" id="biceps">
+        <h2>Bíceps</h2>
+        <ol class="lista-ejercicios">
+            <li>
+                <span>Curl alterno con mancuernas sentado</span>
+                <button type="button" onclick="agregarARutina('Curl alterno con mancuernas sentado', 'Bíceps')">Agregar</button>
+            </li>
+            <li>
+                <span>Curl alterno con mancuernas de pie</span>
+                <button type="button" onclick="agregarARutina('Curl alterno con mancuernas de pie', 'Bíceps')">Agregar</button>
+            </li>
+            <li>
+                <span>Curl concentrado con apoyo en muslo</span>
+                <button type="button" onclick="agregarARutina('Curl concentrado con apoyo en muslo', 'Bíceps')">Agregar</button>
+            </li>
+            <li>
+                <span>Curl alterno martillo</span>
+                <button type="button" onclick="agregarARutina('Curl alterno martillo', 'Bíceps')">Agregar</button>
+            </li>
+            <li>
+                <span>Curl en polea baja a un brazo</span>
+                <button type="button" onclick="agregarARutina('Curl en polea baja a un brazo', 'Bíceps')">Agregar</button>
+            </li>
+            <li>
+                <span>Curl en polea baja a dos brazos</span>
+                <button type="button" onclick="agregarARutina('Curl en polea baja a dos brazos', 'Bíceps')">Agregar</button>
+            </li>
+            <li>
+                <span>Curl en polea alta</span>
+                <button type="button" onclick="agregarARutina('Curl en polea alta', 'Bíceps')">Agregar</button>
+            </li>
+            <li>
+                <span>Curl con barra</span>
+                <button type="button" onclick="agregarARutina('Curl con barra', 'Bíceps')">Agregar</button>
+            </li>
+            <li>
+                <span>Curl en banco Scott con barra</span>
+                <button type="button" onclick="agregarARutina('Curl en banco Scott con barra', 'Bíceps')">Agregar</button>
+            </li>
+            <li>
+                <span>Curl en banco Scott con mancuernas</span>
+                <button type="button" onclick="agregarARutina('Curl en banco Scott con mancuernas', 'Bíceps')">Agregar</button>
+            </li>
+        </ol>
+    </div>
+
+
+    <!-- Grupo: Antebrazo -->
+    <div class="grupo-ejercicios" id="antebrazo">
+        <h2>Antebrazo</h2>
+        <ol class="lista-ejercicios">
+            <li>
+                <span>Curl con barra, pronación</span>
+                <button type="button" onclick="agregarARutina('Curl con barra, pronación', 'Antebrazo')">Agregar</button>
+            </li>
+            <li>
+                <span>Curl con barra, supinación</span>
+                <button type="button" onclick="agregarARutina('Curl con barra, supinación', 'Antebrazo')">Agregar</button>
+            </li>
+            <li>
+                <span>Curl antebrazo, supinación</span>
+                <button type="button" onclick="agregarARutina('Curl antebrazo, supinación', 'Antebrazo')">Agregar</button>
+            </li>
+        </ol>
+    </div>
+
+
+    <!-- Grupo: Tríceps -->
+    <div class="grupo-ejercicios" id="triceps">
+        <h2>Tríceps</h2>
+        <ol class="lista-ejercicios">
+            <li>
+                <span>Extensión acostado con barra a la frente</span>
+                <button type="button" onclick="agregarARutina('Extensión acostado con barra a la frente', 'Tríceps')">Agregar</button>
+            </li>
+            <li>
+                <span>Extensión acostado con barra por detrás de la cabeza</span>
+                <button type="button" onclick="agregarARutina('Extensión acostado con barra por detrás de la cabeza', 'Tríceps')">Agregar</button>
+            </li>
+            <li>
+                <span>Extensión acostado con mancuernas</span>
+                <button type="button" onclick="agregarARutina('Extensión acostado con mancuernas', 'Tríceps')">Agregar</button>
+            </li>
+            <li>
+                <span>Extensión a un brazo sentado</span>
+                <button type="button" onclick="agregarARutina('Extensión a un brazo sentado', 'Tríceps')">Agregar</button>
+            </li>
+            <li>
+                <span>Extensión con mancuerna copa</span>
+                <button type="button" onclick="agregarARutina('Extensión con mancuerna copa', 'Tríceps')">Agregar</button>
+            </li>
+            <li>
+                <span>Extensión inclinada con mancuernas</span>
+                <button type="button" onclick="agregarARutina('Extensión inclinada con mancuernas', 'Tríceps')">Agregar</button>
+            </li>
+            <li>
+                <span>Fondos entre bancos</span>
+                <button type="button" onclick="agregarARutina('Fondos entre bancos', 'Tríceps')">Agregar</button>
+            </li>
+            <li>
+                <span>Fondos en paralelas</span>
+                <button type="button" onclick="agregarARutina('Fondos en paralelas', 'Tríceps')">Agregar</button>
+            </li>
+            <li>
+                <span>Extensión en polea alta</span>
+                <button type="button" onclick="agregarARutina('Extensión en polea alta', 'Tríceps')">Agregar</button>
+            </li>
+            <li>
+                <span>Extensión en polea alta con lazo</span>
+                <button type="button" onclick="agregarARutina('Extensión en polea alta con lazo', 'Tríceps')">Agregar</button>
+            </li>
+            <li>
+                <span>Extensión en polea con agarre supino</span>
+                <button type="button" onclick="agregarARutina('Extensión en polea con agarre supino', 'Tríceps')">Agregar</button>
+            </li>
+            <li>
+                <span>Extensión en polea con agarre supino a un brazo</span>
+                <button type="button" onclick="agregarARutina('Extensión en polea con agarre supino a un brazo', 'Tríceps')">Agregar</button>
+            </li>
+            <li>
+                <span>Extensión en polea alta inclinado</span>
+                <button type="button" onclick="agregarARutina('Extensión en polea alta inclinado', 'Tríceps')">Agregar</button>
+            </li>
+        </ol>
+    </div>
+
+    <!-- Grupo: Deltoides -->
+    <div class="grupo-ejercicios" id="deltoides">
+        <h2>Deltoides</h2>
+        <ol class="lista-ejercicios">
+            <li>
+                <span>Press frontal con barra</span>
+                <button type="button" onclick="agregarARutina('Press frontal con barra', 'Deltoides')">Agregar</button>
+            </li>
+            <li>
+                <span>Press sentado con mancuernas</span>
+                <button type="button" onclick="agregarARutina('Press sentado con mancuernas', 'Deltoides')">Agregar</button>
+            </li>
+            <li>
+                <span>Press sentado en máquina</span>
+                <button type="button" onclick="agregarARutina('Press sentado en máquina', 'Deltoides')">Agregar</button>
+            </li>
+            <li>
+                <span>Elevación lateral con mancuernas o polea</span>
+                <button type="button" onclick="agregarARutina('Elevación lateral con mancuernas o polea', 'Deltoides')">Agregar</button>
+            </li>
+            <li>
+                <span>Elevación lateral tronco inclinado con mancuernas</span>
+                <button type="button" onclick="agregarARutina('Elevación lateral tronco inclinado con mancuernas', 'Deltoides')">Agregar</button>
+            </li>
+            <li>
+                <span>Elevación frontal con mancuernas o polea</span>
+                <button type="button" onclick="agregarARutina('Elevación frontal con mancuernas o polea', 'Deltoides')">Agregar</button>
+            </li>
+            <li>
+                <span>Elevación frontal con barra</span>
+                <button type="button" onclick="agregarARutina('Elevación frontal con barra', 'Deltoides')">Agregar</button>
+            </li>
+            <li>
+                <span>Face pull</span>
+                <button type="button" onclick="agregarARutina('Face pull', 'Deltoides')">Agregar</button>
+            </li>
+        </ol>
+    </div>
+
+
+    <!-- Grupo: Trapecio -->
+    <div class="grupo-ejercicios" id="trapecio">
+        <h2>Trapecio</h2>
+        <ol class="lista-ejercicios">
+            <li>
+                <span>Remo al cuello con manos separadas</span>
+                <button type="button" onclick="agregarARutina('Remo al cuello con manos separadas', 'Trapecio')">Agregar</button>
+            </li>
+            <li>
+                <span>Remo al cuello en polea baja</span>
+                <button type="button" onclick="agregarARutina('Remo al cuello en polea baja', 'Trapecio')">Agregar</button>
+            </li>
+            <li>
+                <span>Encogimiento de hombros con barra</span>
+                <button type="button" onclick="agregarARutina('Encogimiento de hombros con barra', 'Trapecio')">Agregar</button>
+            </li>
+            <li>
+                <span>Encogimiento de hombros sentado con barra Z</span>
+                <button type="button" onclick="agregarARutina('Encogimiento de hombros sentado con barra Z', 'Trapecio')">Agregar</button>
+            </li>
+            <li>
+                <span>Giros sentado con barra Z</span>
+                <button type="button" onclick="agregarARutina('Giros sentado con barra Z', 'Trapecio')">Agregar</button>
+            </li>
+            <li>
+                <span>Encogimiento de hombros con barra hacia atrás</span>
+                <button type="button" onclick="agregarARutina('Encogimiento de hombros con barra hacia atrás', 'Trapecio')">Agregar</button>
+            </li>
+            <li>
+                <span>Encogimiento de hombros con mancuernas hacia atrás</span>
+                <button type="button" onclick="agregarARutina('Encogimiento de hombros con mancuernas hacia atrás', 'Trapecio')">Agregar</button>
+            </li>
+        </ol>
+    </div>
+
+
+    <!-- Grupo: Pectorales -->
+    <div class="grupo-ejercicios" id="pectorales">
+        <h2>Pectorales</h2>
+        <ol class="lista-ejercicios">
+            <li>
+                <span>Press plano con barra</span>
+                <button type="button" onclick="agregarARutina('Press plano con barra', 'Pectorales')">Agregar</button>
+            </li>
+            <li>
+                <span>Press plano con mancuernas</span>
+                <button type="button" onclick="agregarARutina('Press plano con mancuernas', 'Pectorales')">Agregar</button>
+            </li>
+            <li>
+                <span>Aperturas en plano con mancuernas</span>
+                <button type="button" onclick="agregarARutina('Aperturas en plano con mancuernas', 'Pectorales')">Agregar</button>
+            </li>
+            <li>
+                <span>Press inclinado con barra</span>
+                <button type="button" onclick="agregarARutina('Press inclinado con barra', 'Pectorales')">Agregar</button>
+            </li>
+            <li>
+                <span>Press inclinado con mancuernas</span>
+                <button type="button" onclick="agregarARutina('Press inclinado con mancuernas', 'Pectorales')">Agregar</button>
+            </li>
+            <li>
+                <span>Aperturas inclinadas con mancuernas</span>
+                <button type="button" onclick="agregarARutina('Aperturas inclinadas con mancuernas', 'Pectorales')">Agregar</button>
+            </li>
+            <li>
+                <span>Press declinado con barra</span>
+                <button type="button" onclick="agregarARutina('Press declinado con barra', 'Pectorales')">Agregar</button>
+            </li>
+            <li>
+                <span>Press declinado con mancuernas</span>
+                <button type="button" onclick="agregarARutina('Press declinado con mancuernas', 'Pectorales')">Agregar</button>
+            </li>
+            <li>
+                <span>Fondos en paralelas</span>
+                <button type="button" onclick="agregarARutina('Fondos en paralelas', 'Pectorales')">Agregar</button>
+            </li>
+            <li>
+                <span>Aperturas en máquina</span>
+                <button type="button" onclick="agregarARutina('Aperturas en máquina', 'Pectorales')">Agregar</button>
+            </li>
+            <li>
+                <span>Pullover con mancuernas</span>
+                <button type="button" onclick="agregarARutina('Pullover con mancuernas', 'Pectorales')">Agregar</button>
+            </li>
+            <li>
+                <span>Cruce de pie con poleas</span>
+                <button type="button" onclick="agregarARutina('Cruce de pie con poleas', 'Pectorales')">Agregar</button>
+            </li>
+        </ol>
+    </div>
+
+
+    <!-- Grupo: Espalda -->
+    <div class="grupo-ejercicios" id="espalda">
+        <h2>Espalda</h2>
+        <ol class="lista-ejercicios">
+            <li>
+                <span>Dominadas</span>
+                <button type="button" onclick="agregarARutina('Dominadas', 'Espalda')">Agregar</button>
+            </li>
+            <li>
+                <span>Dominadas Agarres Supino</span>
+                <button type="button" onclick="agregarARutina('Dominadas Agarres Supino', 'Espalda')">Agregar</button>
+            </li>
+            <li>
+                <span>Jalón al Pecho Toma Amplia</span>
+                <button type="button" onclick="agregarARutina('Jalón al Pecho Toma Amplia', 'Espalda')">Agregar</button>
+            </li>
+            <li>
+                <span>Jalón Polea Estrecho</span>
+                <button type="button" onclick="agregarARutina('Jalón Polea Estrecho', 'Espalda')">Agregar</button>
+            </li>
+            <li>
+                <span>Jalón Polea Agarre Invertido</span>
+                <button type="button" onclick="agregarARutina('Jalón Polea Agarre Invertido', 'Espalda')">Agregar</button>
+            </li>
+            <li>
+                <span>Pull Over Polea Alta</span>
+                <button type="button" onclick="agregarARutina('Pull Over Polea Alta', 'Espalda')">Agregar</button>
+            </li>
+            <li>
+                <span>Remo Polea Baja</span>
+                <button type="button" onclick="agregarARutina('Remo Polea Baja', 'Espalda')">Agregar</button>
+            </li>
+            <li>
+                <span>Remo Polea Baja a un Brazo</span>
+                <button type="button" onclick="agregarARutina('Remo Polea Baja a un Brazo', 'Espalda')">Agregar</button>
+            </li>
+            <li>
+                <span>Remo con Mancuernas</span>
+                <button type="button" onclick="agregarARutina('Remo con Mancuernas', 'Espalda')">Agregar</button>
+            </li>
+            <li>
+                <span>Remo Horizontal con Barra</span>
+                <button type="button" onclick="agregarARutina('Remo Horizontal con Barra', 'Espalda')">Agregar</button>
+            </li>
+            <li>
+                <span>Face Pull</span>
+                <button type="button" onclick="agregarARutina('Face Pull', 'Espalda')">Agregar</button>
+            </li>
+            <li>
+                <span>Peso Muerto Piernas Flexionadas</span>
+                <button type="button" onclick="agregarARutina('Peso Muerto Piernas Flexionadas', 'Espalda')">Agregar</button>
+            </li>
+        </ol>
+    </div>
+
+
+    <!-- Grupo: Cuádriceps -->
+    <div class="grupo-ejercicios" id="cuadriceps">
+        <h2>Cuádriceps</h2>
+        <ol class="lista-ejercicios">
+            <li>
+                <span>Sentadilla</span>
+                <button type="button" onclick="agregarARutina('Sentadilla', 'Cuádriceps')">Agregar</button>
+            </li>
+            <li>
+                <span>Sentadilla Mancuerna Frontal</span>
+                <button type="button" onclick="agregarARutina('Sentadilla Mancuerna Frontal', 'Cuádriceps')">Agregar</button>
+            </li>
+            <li>
+                <span>Sentadilla Frontal con Barra</span>
+                <button type="button" onclick="agregarARutina('Sentadilla Frontal con Barra', 'Cuádriceps')">Agregar</button>
+            </li>
+            <li>
+                <span>Prensa Inclinada</span>
+                <button type="button" onclick="agregarARutina('Prensa Inclinada', 'Cuádriceps')">Agregar</button>
+            </li>
+            <li>
+                <span>Sentadilla Hack</span>
+                <button type="button" onclick="agregarARutina('Sentadilla Hack', 'Cuádriceps')">Agregar</button>
+            </li>
+            <li>
+                <span>Extendsión de Cuádriceps</span>
+                <button type="button" onclick="agregarARutina('Extendsión de Cuádriceps', 'Cuádriceps')">Agregar</button>
+            </li>
+            <li>
+                <span>Step Up</span>
+                <button type="button" onclick="agregarARutina('Step Up', 'Cuádriceps')">Agregar</button>
+            </li>
+            <li>
+                <span>Sentadilla Búlgara</span>
+                <button type="button" onclick="agregarARutina('Sentadilla Búlgara', 'Cuádriceps')">Agregar</button>
+            </li>
+        </ol>
+    </div>
+
+
+    <!-- Grupo: Isquiosurales -->
+    <div class="grupo-ejercicios" id="isquiosurales">
+        <h2>Isquiosurales</h2>
+        <ol class="lista-ejercicios">
+            <li>
+                <span>Curl de Piernas</span>
+                <button type="button" onclick="agregarARutina('Curl de Piernas', 'Isquiosurales')">Agregar</button>
+            </li>
+            <li>
+                <span>Prensa Inclinada Pies Altos Plataforma</span>
+                <button type="button" onclick="agregarARutina('Prensa Inclinada Pies Altos Plataforma', 'Isquiosurales')">Agregar</button>
+            </li>
+            <li>
+                <span>Sentadilla Hack Invertida</span>
+                <button type="button" onclick="agregarARutina('Sentadilla Hack Invertida', 'Isquiosurales')">Agregar</button>
+            </li>
+            <li>
+                <span>Peso Muerto Piernas R.</span>
+                <button type="button" onclick="agregarARutina('Peso Muerto Piernas R.', 'Isquiosurales')">Agregar</button>
+            </li>
+            <li>
+                <span>Buenos Días</span>
+                <button type="button" onclick="agregarARutina('Buenos Días', 'Isquiosurales')">Agregar</button>
+            </li>
+            <li>
+                <span>Tijera con Barra P.N</span>
+                <button type="button" onclick="agregarARutina('Tijera con Barra P.N', 'Isquiosurales')">Agregar</button>
+            </li>
+            <li>
+                <span>Tijera Mancuerna P.N</span>
+                <button type="button" onclick="agregarARutina('Tijera Mancuerna P.N', 'Isquiosurales')">Agregar</button>
+            </li>
+            <li>
+                <span>Zancadas</span>
+                <button type="button" onclick="agregarARutina('Zancadas', 'Isquiosurales')">Agregar</button>
+            </li>
+            <li>
+                <span>Peso Muerto Convencional</span>
+                <button type="button" onclick="agregarARutina('Peso Muerto Convencional', 'Isquiosurales')">Agregar</button>
+            </li>
+        </ol>
+    </div>
+
+
+    <!-- Grupo: Glúteos-Aductores -->
+    <div class="grupo-ejercicios" id="gluteos-aductores">
+        <h2>Glúteos-Aductores</h2>
+        <ol class="lista-ejercicios">
+            <li>
+                <span>Aductores en Polea Baja</span>
+                <button type="button" onclick="agregarARutina('Aductores en Polea Baja', 'Glúteos-Adductores')">Agregar</button>
+            </li>
+            <li>
+                <span>Sentadillas Barra Pies Separados</span>
+                <button type="button" onclick="agregarARutina('Sentadillas Barra Pies Separados', 'Glúteos-Adductores')">Agregar</button>
+            </li>
+            <li>
+                <span>Sentadillas Mancuerna Pies Separados</span>
+                <button type="button" onclick="agregarARutina('Sentadillas Mancuerna Pies Separados', 'Glúteos-Adductores')">Agregar</button>
+            </li>
+            <li>
+                <span>Aductores Máquina</span>
+                <button type="button" onclick="agregarARutina('Aductores Máquina', 'Glúteos-Adductores')">Agregar</button>
+            </li>
+            <li>
+                <span>Aductores Balón</span>
+                <button type="button" onclick="agregarARutina('Aductores Balón', 'Glúteos-Adductores')">Agregar</button>
+            </li>
+            <li>
+                <span>Extensión Cadena Polea Baja</span>
+                <button type="button" onclick="agregarARutina('Extensión Cadena Polea Baja', 'Glúteos-Adductores')">Agregar</button>
+            </li>
+            <li>
+                <span>Extensión Cadera Colchoneta</span>
+                <button type="button" onclick="agregarARutina('Extensión Cadera Colchoneta', 'Glúteos-Adductores')">Agregar</button>
+            </li>
+            <li>
+                <span>Extensión Cadera en Máquina</span>
+                <button type="button" onclick="agregarARutina('Extensión Cadera en Máquina', 'Glúteos-Adductores')">Agregar</button>
+            </li>
+            <li>
+                <span>Extensión Cadera sobre Banco Plano</span>
+                <button type="button" onclick="agregarARutina('Extensión Cadera sobre Banco Plano', 'Glúteos-Adductores')">Agregar</button>
+            </li>
+            <li>
+                <span>Elevación Pelvis en Colchoneta</span>
+                <button type="button" onclick="agregarARutina('Elevación Pelvis en Colchoneta', 'Glúteos-Adductores')">Agregar</button>
+            </li>
+            <li>
+                <span>Elevación Pelvis Pies sobre Balón</span>
+                <button type="button" onclick="agregarARutina('Elevación Pelvis Pies sobre Balón', 'Glúteos-Adductores')">Agregar</button>
+            </li>
+            <li>
+                <span>Abducción Cadera Polea Baja</span>
+                <button type="button" onclick="agregarARutina('Abducción Cadera Polea Baja', 'Glúteos-Adductores')">Agregar</button>
+            </li>
+            <li>
+                <span>Abducción Cadera Máquina</span>
+                <button type="button" onclick="agregarARutina('Abducción Cadera Máquina', 'Glúteos-Adductores')">Agregar</button>
+            </li>
+            <li>
+                <span>Abducción Cadera Colchoneta</span>
+                <button type="button" onclick="agregarARutina('Abducción Cadera Colchoneta', 'Glúteos-Adductores')">Agregar</button>
+            </li>
+            <li>
+                <span>Abducción Cadera Colchoneta con Balón</span>
+                <button type="button" onclick="agregarARutina('Abducción Cadera Colchoneta con Balón', 'Glúteos-Adductores')">Agregar</button>
+            </li>
+            <li>
+                <span>Hips Thrust</span>
+                <button type="button" onclick="agregarARutina('Hips Thrust', 'Glúteos-Adductores')">Agregar</button>
+            </li>
+        </ol>
+    </div>
+
+
+    <!-- Grupo: Pantorrillas-Sóleos -->
+    <div class="grupo-ejercicios" id="pantorrillas-soleos">
+        <h2>Pantorrillas-Sóleos</h2>
+        <ol class="lista-ejercicios">
+            <li>
+                <span>Elevación Talones con Barra</span>
+                <button type="button" onclick="agregarARutina('Elevación Talones con Barra', 'Pantorrillas-Sóleos')">Agregar</button>
+            </li>
+            <li>
+                <span>Elevación Talones con Mancuerna</span>
+                <button type="button" onclick="agregarARutina('Elevación Talones con Mancuerna', 'Pantorrillas-Sóleos')">Agregar</button>
+            </li>
+            <li>
+                <span>Gemelos Prensa</span>
+                <button type="button" onclick="agregarARutina('Gemelos Prensa', 'Pantorrillas-Sóleos')">Agregar</button>
+            </li>
+            <li>
+                <span>Elevación Talones Sentado</span>
+                <button type="button" onclick="agregarARutina('Elevación Talones Sentado', 'Pantorrillas-Sóleos')">Agregar</button>
+            </li>
+            <li>
+                <span>Elevación Talones en Hack</span>
+                <button type="button" onclick="agregarARutina('Elevación Talones en Hack', 'Pantorrillas-Sóleos')">Agregar</button>
+            </li>
+        </ol>
+    </div>
+
+
+    <!-- Grupo: TRX -->
+    <div class="grupo-ejercicios" id="trx">
+        <h2>TRX</h2>
+
+        <!-- Subgrupo: Core Balance -->
+        <div class="subgrupo-ejercicios" id="core-balance">
+            <h3>Core Balance</h3>
+            <ol class="lista-ejercicios">
+                <li>
+                    <span>Balance Básico</span>
+                    <button type="button" onclick="agregarARutina('Balance Básico', 'Core Balance')">Agregar</button>
+                </li>
+                <li>
+                    <span>Elevación Pélvica</span>
+                    <button type="button" onclick="agregarARutina('Elevación Pélvica', 'Core Balance')">Agregar</button>
+                </li>
+                <li>
+                    <span>Flexión Brazos y Apertura de Piernas</span>
+                    <button type="button" onclick="agregarARutina('Flexión Brazos y Apertura de Piernas', 'Core Balance')">Agregar</button>
+                </li>
+                <li>
+                    <span>Flexión Piernas Básica</span>
+                    <button type="button" onclick="agregarARutina('Flexión Piernas Básica', 'Core Balance')">Agregar</button>
+                </li>
+                <li>
+                    <span>Flexión Piernas</span>
+                    <button type="button" onclick="agregarARutina('Flexión Piernas', 'Core Balance')">Agregar</button>
+                </li>
+            </ol>
+        </div>
+
+        <!-- Subgrupo: Tren Superior -->
+        <div class="subgrupo-ejercicios" id="tren-superior">
+            <h3>Tren Superior</h3>
+            <ol class="lista-ejercicios">
+                <li>
+                    <span>Brazos Apertura Espalda</span>
+                    <button type="button" onclick="agregarARutina('Brazos Apertura Espalda', 'Tren Superior')">Agregar</button>
+                </li>
+                <li>
+                    <span>Brazos Flexiones Pecho</span>
+                    <button type="button" onclick="agregarARutina('Brazos Flexiones Pecho', 'Tren Superior')">Agregar</button>
+                </li>
+                <li>
+                    <span>Brazos Apertura</span>
+                    <button type="button" onclick="agregarARutina('Brazos Apertura', 'Tren Superior')">Agregar</button>
+                </li>
+                <li>
+                    <span>Brazos Elevación Corto</span>
+                    <button type="button" onclick="agregarARutina('Brazos Elevación Corto', 'Tren Superior')">Agregar</button>
+                </li>
+                <li>
+                    <span>Brazos Elevación</span>
+                    <button type="button" onclick="agregarARutina('Brazos Elevación', 'Tren Superior')">Agregar</button>
+                </li>
+                <li>
+                    <span>Brazos Press</span>
+                    <button type="button" onclick="agregarARutina('Brazos Press', 'Tren Superior')">Agregar</button>
+                </li>
+                <li>
+                    <span>Brazos Elevación de Espalda</span>
+                    <button type="button" onclick="agregarARutina('Brazos Elevación de Espalda', 'Tren Superior')">Agregar</button>
+                </li>
+                <li>
+                    <span>Brazos Extensión Codos</span>
+                    <button type="button" onclick="agregarARutina('Brazos Extensión Codos', 'Tren Superior')">Agregar</button>
+                </li>
+                <li>
+                    <span>Brazos Flexión Codos</span>
+                    <button type="button" onclick="agregarARutina('Brazos Flexión Codos', 'Tren Superior')">Agregar</button>
+                </li>
+                <li>
+                    <span>Brazos Remo</span>
+                    <button type="button" onclick="agregarARutina('Brazos Remo', 'Tren Superior')">Agregar</button>
+                </li>
+            </ol>
+        </div>
+
+        <!-- Subgrupo: Tren Inferior -->
+        <div class="subgrupo-ejercicios" id="tren-inferior">
+            <h3>Tren Inferior</h3>
+            <ol class="lista-ejercicios">
+                <li>
+                    <span>Sentadilla Básica</span>
+                    <button type="button" onclick="agregarARutina('Sentadilla Básica', 'Tren Inferior')">Agregar</button>
+                </li>
+                <li>
+                    <span>Sentadilla Desplazamiento</span>
+                    <button type="button" onclick="agregarARutina('Sentadilla Desplazamiento', 'Tren Inferior')">Agregar</button>
+                </li>
+                <li>
+                    <span>Sentadilla Dinámica</span>
+                    <button type="button" onclick="agregarARutina('Sentadilla Dinámica', 'Tren Inferior')">Agregar</button>
+                </li>
+                <li>
+                    <span>Sentadilla Isométrica</span>
+                    <button type="button" onclick="agregarARutina('Sentadilla Isométrica', 'Tren Inferior')">Agregar</button>
+                </li>
+                <li>
+                    <span>Sentadilla Saltando</span>
+                    <button type="button" onclick="agregarARutina('Sentadilla Saltando', 'Tren Inferior')">Agregar</button>
+                </li>
+                <li>
+                    <span>Sentadilla Unipodal</span>
+                    <button type="button" onclick="agregarARutina('Sentadilla Unipodal', 'Tren Inferior')">Agregar</button>
+                </li>
+                <li>
+                    <span>Sentadilla Unipodal Funcional</span>
+                    <button type="button" onclick="agregarARutina('Sentadilla Unipodal Funcional', 'Tren Inferior')">Agregar</button>
+                </li>
+                <li>
+                    <span>Desplazamiento Cruzado</span>
+                    <button type="button" onclick="agregarARutina('Desplazamiento Cruzado', 'Tren Inferior')">Agregar</button>
+                </li>
+                <li>
+                    <span>Desplazamiento Lateral</span>
+                    <button type="button" onclick="agregarARutina('Desplazamiento Lateral', 'Tren Inferior')">Agregar</button>
+                </li>
+                <li>
+                    <span>Desplazamiento Funcional</span>
+                    <button type="button" onclick="agregarARutina('Desplazamiento Funcional', 'Tren Inferior')">Agregar</button>
+                </li>
+                <li>
+                    <span>Tijera Básica</span>
+                    <button type="button" onclick="agregarARutina('Tijera Básica', 'Tren Inferior')">Agregar</button>
+                </li>
+                <li>
+                    <span>Tijera Unipodal Dinámica</span>
+                    <button type="button" onclick="agregarARutina('Tijera Unipodal Dinámica', 'Tren Inferior')">Agregar</button>
+                </li>
+                <li>
+                    <span>Tijera sin Apoyo de Brazos</span>
+                    <button type="button" onclick="agregarARutina('Tijera sin Apoyo de Brazos', 'Tren Inferior')">Agregar</button>
+                </li>
+                <li>
+                    <span>Sentadilla Piernas Cruzadas</span>
+                    <button type="button" onclick="agregarARutina('Sentadilla Piernas Cruzadas', 'Tren Inferior')">Agregar</button>
+                </li>
+                <li>
+                    <span>Tijera Pilometría</span>
+                    <button type="button" onclick="agregarARutina('Tijera Pilometría', 'Tren Inferior')">Agregar</button>
+                </li>
+                <li>
+                    <span>Curl Hamstring</span>
+                    <button type="button" onclick="agregarARutina('Curl Hamstring', 'Tren Inferior')">Agregar</button>
+                </li>
+            </ol>
+        </div>
+    </div>
+        <!-- Botón para cerrar la ventana emergente -->
+        <button type="button" id="btn-cerrar">Cerrar</button>      
+    </div>
+
+    <!-- Enlace con JS -->
+    <script src="/JS/ejercicios.js"></script>
+</body>
+</html>
