@@ -1,6 +1,3 @@
-
-
-
 <!-- CÓDIGO PHP -->
 <!-- LOGIN CON PHP -->
 <?php
@@ -48,11 +45,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             exit();
         } else {
             // Si la contraseña no coincide, mostrar un mensaje de error
-            echo "La contraseña es incorrecta.";
+            echo "<p style='color: red;'>Contraseña incorrecta.</p>";            
         }
     } else {
         // Si no se encuentra ningún usuario con el ID ingresado, mostrar un mensaje de error
-        echo "El ID de usuario no existe.";
+        echo "<p style='color: red;'>El usuario no está registrado.</p>";;
     }
 
     // Cerrar la conexión
@@ -69,17 +66,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de sesion</title>
     <!-- Conexion Con CSS -->
-    <link rel="stylesheet" href="inisesion.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <link rel="stylesheet" href="../CSS/inisesion.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" >
 </head>
 
-<body> 
-
-
-    <img  src="/img/Logo_IronGym.png" alt="Logo" class="Logo">
+<body>
+    
+    <img  src="../img/Logo_IronGym.png" alt="Logo" class="Logo">
     <div class="container-info">
-        <form action="#" method="POST" id="login" class="form">
+        <form action="./index.php" method="POST" id="login" class="form">
         <!-- Título principal del formulario de inicio de sesión -->
             <H1>Inicio de Sesion</H1>
             <div class="info-hijos">
@@ -89,7 +84,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <!-- Campo de entrada para el ID del usuario -->
                     <label for="usuario-id"Identificacion>
                         <!-- Icono Usuario -->
-                        <img src="/img/IconoUser.png" alt="usuario">
+                        <img src="../img/IconoUser.png" alt="usuario">
                         <!-- Input para el ID de usuario-->
                         <input type="text" id="usuario-id" name="usuario-id" required>
                     </label> 
@@ -101,7 +96,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="form-group">
                     <label for="contrasena">
                         <!-- Icono Contraseña -->
-                        <img src="/img/CandadoContra.png" alt="Contraseña">
+                        <img src="../img/CandadoContra.png" alt="Contraseña">
                         <!-- Input para la contraseña-->
                         <input type="password" id="contrasena" name="contrasena" required>
                         <i class='bx bx-show-alt'></i>
@@ -127,10 +122,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <!-- Este enlace redirige a una página donde se puede restablecer la contraseña -->
                     <a href="https://gmail.com" class="olvido" target="_self">¿Olvidaste tu contraseña?</a>
             </div>
-        </form>        
-    </div>
-
+        </form>
     <!-- Enlace con JS -->
-    <script src="/JS/index.js"></script>
+    <script src="../JS/index.js"></script>
 </body>
 </html>
