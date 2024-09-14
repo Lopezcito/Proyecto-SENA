@@ -1,25 +1,41 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Principal</title>
+    <link rel="stylesheet" href="/CSS/principal.css">
 </head>
 <body>
-
     <!-- Barra de Navegación -->
     <div class="barraNavegacion">
+        <p class="titulo"><b>IRON GYM</b></p>
+        <input class="logo" type="image" src="/img/logo2.png">
+
         <!-- Enlace a la página de registro -->
-        <a href="registro.html">Registro</a>
+        <a class="registro" href="registro.html">
+            <img src="/img/registro.webp" alt="Logo de Registro" class="logo1">
+            Registro
+        </a>
+        
         <!-- Enlace a la página de medidas corporales -->
-        <a href="medidasCorporales.html">Medidas Corporales</a>
+        <a class="medidasCorporales" href="medidasCorporales.html">
+            <img src="/img/medidas.webp" alt="Logo de Medidas Corporales" class="logo2">
+            Medidas Corporales
+        </a>
         <!-- Enlace a la página de rutina -->
-        <a href="ejercicios.html">Rutina</a>
+        <a class="ejercicios" href="ejercicios.html">
+            <img src="/img/rutina.webp" alt="Logo de Ejercicios" class="logo3">
+            Rutina
+        </a>
         
         <!-- Menú Desplegable para cerrar sesión -->
         <div class="usuario">
             <!-- Botón que abre el menú desplegable -->
-            <button class="menuDesplegable">imagenMenu</button>
+            <!-- <button class="menuDesplegable" ></button> -->
+            <input type="image" class="menuDesplegable" src="/img/perfil.webp" width="95" height="85">
+
             <!-- Sección del temporizador -->
             <div class="temporizador">
                 <h3>Tiempo Restante:</h3>
@@ -35,10 +51,111 @@
     </div>
 
     <!-- Contenido Principal de la Página -->
-    <div class="contenido">
-        <h1>Bienvenido a la Página Principal</h1>
-        <p>Este es el contenido principal de la página.</p>
+    <div >
+        <h1 class="contenido">Bienvenido a la Página Principal</h1>
+        <!-- <p>Este es el contenido principal de la página.</p> -->
+        <!-- Contenido de imagenes -->
+    <div class="container-banner">
+        <div class="banners" id="sliderb">
+            <section class="slider-section">
+                <img src="/img/athletic-person-exercising-working-out.jpg" alt="Imagen 1">
+            </section>
+            <section class="slider-section">
+                <img src="/img/Captura de pantalla 2024-08-27 202412.jpg" alt="Imagen 2">
+            </section>
+            <section class="slider-section">
+                <img src="/img/Captura de pantalla 2024-08-27 202750.jpg" alt="Imagen 3">
+            </section>
+            <section class="slider-section">
+                <img src="/img/Captura de pantalla 2024-08-27 202750.jpg" alt="Imagen 4">
+            </section>
+            <section class="slider-section">
+                <img src="/img/exercise-weights-iron-dumbbell-with-extra-plates.jpg" alt="Imagen 5">
+            </section>
+        </div>
+        <div class="btn-left" id="prevButton">
+            <img class="botonl" src="/img/btn-izquierda.png" alt="Izquierda">
+        </div>
+        <div class="btn-right" id="nextButton">
+            <img class="botonr" src="/img/btn-derecha.png" alt="Derecha">
+        </div>
     </div>
+    </div>
+    
+<script>
+    // MOVIMIENTO IMAGENES
+     // Esperar a que el contenido del DOM se cargue
+document.addEventListener('DOMContentLoaded', () => {
+    const slider = document.getElementById('sliderb');
+    const prevButton = document.getElementById('prevButton');
+    const nextButton = document.getElementById('nextButton');
+    const sections = document.querySelectorAll('.slider-section');
+    const sectionCount = sections.length;
+    const sectionWidth = 100 / sectionCount;
+    let currentIndex = 0;
+    const autoSlideInterval = 4000;
 
+    // Configurar el ancho de cada sección
+    slider.style.width = `${sectionCount * 100}%`;
+    sections.forEach(section => {
+        section.style.width = `${sectionWidth}%`;
+    });
+
+    // Función para actualizar el índice y el desplazamiento del slider
+    function updateSlider() {
+        const offset = -currentIndex * sectionWidth;
+        slider.style.transform = `translateX(${offset}%)`;
+        slider.style.transition = "all ease .9s"
+    }
+
+    // Manejador del clic del botón "anterior"
+    prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex > 0) ? currentIndex - 1 : sectionCount - 1;
+        updateSlider();
+    });
+
+    // Manejador del clic del botón "siguiente"
+    nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex < sectionCount - 1) ? currentIndex + 1 : 0;
+        updateSlider();
+    });
+
+    //funcion para el movimineto automatico del slide
+    function autoSlide() {
+        currentIndex = (currentIndex < sectionCount - 1) ? currentIndex + 1 : 0;
+        updateSlider();
+    }
+
+    // Inicializar el slider
+    updateSlider();
+
+    //configurar el intervalo para el movimiento automatico
+    setInterval(autoSlide, autoSlideInterval);
+});
+
+// VENTANA USUARIO
+    // Obtener referencias a los elementos del DOM
+    const menuButton = document.querySelector('.menuDesplegable'); // Botón que abre el menú
+    const menu = document.querySelector('.cerrar.sesion'); // Menú desplegable
+    const temporizadorSection = document.querySelector('.temporizador'); // Sección del temporizador
+    // Agregar un evento de clic al botón del menú
+    menuButton.addEventListener('click', function() {
+        // Alternar la visibilidad del menú desplegable
+        if (menu.style.display === 'none' || menu.style.display === '') {
+            menu.style.display = 'block'; // Mostrar el menú
+            temporizadorSection.style.display = 'block'; // Mostrar el temporizador
+        } else {
+            menu.style.display = 'none'; // Ocultar el menú
+            temporizadorSection.style.display = 'none'; // Ocultar el temporizador
+        }
+    });
+    // Opcional: Hacer que el menú y el temporizador se oculten si se hace clic fuera de ellos
+    document.addEventListener('click', function(event) {
+        if (!menuButton.contains(event.target) && !menu.contains(event.target) && !temporizadorSection.contains(event.target)) {
+            menu.style.display = 'none'; // Ocultar el menú si se hace clic fuera de él
+            temporizadorSection.style.display = 'none'; // Ocultar el temporizador si se hace clic fuera de él
+        }
+    });
+</script>
 </body>
 </html>
