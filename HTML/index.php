@@ -1,3 +1,6 @@
+
+
+
 <!-- CÓDIGO PHP -->
 <!-- LOGIN CON PHP -->
 <?php
@@ -66,12 +69,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de sesion</title>
     <!-- Conexion Con CSS -->
-    <link rel="stylesheet" href="CSS/inisesion.css">
+    <link rel="stylesheet" href="inisesion.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
-<body>
-    
+<body> 
+
+
     <img  src="/img/Logo_IronGym.png" alt="Logo" class="Logo">
     <div class="container-info">
         <form action="#" method="POST" id="login" class="form">
